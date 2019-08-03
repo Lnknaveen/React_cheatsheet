@@ -31,3 +31,11 @@ API Reference   | Description
 **Conditions**                      | `<Fragment> { showMyComponent ? <MyComponent /> : <OtherComponent /> } </Fragment>`
 **Short-circuit evaluation**        | `<Fragment> { showPopup && <Popup />} </Fragment>`
 **Lists**                           | `<ul> { items.map(item => <Child {...item} />) } </ul>`
+**-**                               |                                    
+**Returning multiple elements**     | `render () { return [ <li key="A">First item</li>, <li key="B">Second item</li> ] } // Keys mandatory` 
+**Returning strings**               | `render() { return 'Look ma, no spans!'; }`
+**Validation**                      | `PropTypes - MyComponent.propTypes = { email: PropTypes.string }`
+**Custom validation**               | `MyCo.propTypes = { customProp: (props, key, componentName) => { return new Error('Validation failed!') } }`
+
+
+
