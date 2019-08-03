@@ -2,6 +2,8 @@
 
 React is a unidiractional library
 
+https://github.com/enaqx/awesome-react
+
 API Reference   | Description  
 ---             | ---   
 **Component**                       | lets you split the UI into independent, reusable pieces in isolation
