@@ -22,6 +22,9 @@ API Reference   | Description
 **LC - componentDidCatch()**	      | Catch errors (16+)
 **LC - componentDidUpdate()**       |	Do setState(), DOM operation or network calls here
 **LC - shouldComponentUpdate()**    |	Skips render() if returns false
+**LC - componentWillReceiveProps()**| invoked every time component recieves new props.
+**LC - componentWillUpdate()**      | invoked immediately before update (new props or state)
+**forceUpdate()**                   | forces a re-render; AVOID if possible
 **Dom node access**                 | `<input ref={el => this.input = el} />, componentDidMount () { this.input.focus() }`
 **Dom event**                       | `<input onChange={event => this.onChange(event)} />, onChange (event) { }`
 **Transfer properties**             | `<Children {...this.props} />`
@@ -31,11 +34,12 @@ API Reference   | Description
 **Conditions**                      | `<Fragment> { showMyComponent ? <MyComponent /> : <OtherComponent /> } </Fragment>`
 **Short-circuit evaluation**        | `<Fragment> { showPopup && <Popup />} </Fragment>`
 **Lists**                           | `<ul> { items.map(item => <Child {...item} />) } </ul>`
-**-**                               |                                    
 **Returning multiple elements**     | `render () { return [ <li key="A">First item</li>, <li key="B">Second item</li> ] } // Keys mandatory` 
 **Returning strings**               | `render() { return 'Look ma, no spans!'; }`
 **Validation**                      | `PropTypes - MyComponent.propTypes = { email: PropTypes.string }`
 **Custom validation**               | `MyCo.propTypes = { customProp: (props, key, componentName) => { return new Error('Validation failed!') } }`
+**Contect**                         | Context provides a way to pass data through the component tree without having to pass props down manually at every level
+
 
 
 
