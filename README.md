@@ -22,12 +22,12 @@ API Reference   | Description
 **LC - componentDidCatch()**	      | Catch errors (16+)
 **LC - componentDidUpdate()**       |	Do setState(), DOM operation or network calls here
 **LC - shouldComponentUpdate()**    |	Skips render() if returns false
-**Dom node access**                 | <input ref={el => this.input = el} />, componentDidMount () { this.input.focus() }
-**Dom event**                       | <input onChange={event => this.onChange(event)} />, onChange (event) { }
-**Transfer properties**             | <Children {...this.props} />
-**Style 1**                         | const style = { height: 10 }, <div style={style}></div> 
-**Style 2**                         | <div style={{ margin: 0, padding: 0 }}></div>
-**inner HTML**                      | <div dangerouslySetInnerHTML={{__html: markdownify()}} />
-**Conditions**                      | <Fragment> { showMyComponent ? <MyComponent /> : <OtherComponent /> } </Fragment>
-**Short-circuit evaluation**        | <Fragment> { showPopup && <Popup />} </Fragment>
-**Lists**                           | <ul> { items.map(item => <Child {...item} />) } </ul>
+**Dom node access**                 | `<input ref={el => this.input = el} />, componentDidMount () { this.input.focus() }`
+**Dom event**                       | `<input onChange={event => this.onChange(event)} />, onChange (event) { }`
+**Transfer properties**             | `<Children {...this.props} />`
+**Style 1**                         | `const style = { height: 10 }, <div style={style}></div>`
+**Style 2**                         | `<div style={{ margin: 0, padding: 0 }}></div>`
+**inner HTML**                      | `<div dangerouslySetInnerHTML={{__html: markdownify()}} />`
+**Conditions**                      | `<Fragment> { showMyComponent ? <MyComponent /> : <OtherComponent /> } </Fragment>`
+**Short-circuit evaluation**        | `<Fragment> { showPopup && <Popup />} </Fragment>`
+**Lists**                           | `<ul> { items.map(item => <Child {...item} />) } </ul>`
