@@ -41,7 +41,7 @@ API Reference   | Description
 **Returning strings**               | `render() { return 'Look ma, no spans!'; }`
 **Validation**                      | `PropTypes - MyComponent.propTypes = { email: PropTypes.string }`
 **Custom validation**               | `MyCo.propTypes = { customProp: (props, key, componentName) => { return new Error('Validation failed!') } }`
-**Contect**                         | Context provides a way to pass data through the component tree without having to pass props down manually at every level
+**Context**                         | Context provides a way to pass data through the component tree without having to pass props down manually at every level
 
 
 
