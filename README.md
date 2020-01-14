@@ -16,6 +16,7 @@ API Reference   | Description
 **Functional Component**            | State less component, which gets the properties as first parameter
 **Pure Component**                  | Doesn’t rerender if props/state hasn’t changed; done via shallow comparison.
 **Component APIs**                  | [Hit me](https://reactjs.org/docs/react-component.html) 
+**LC**                              | **Lifecycle**
 **LC - constructor (props)**        | Before rendering
 **LC - componentWillMount()**       | Don’t use this
 **LC - render()**                   | Render
