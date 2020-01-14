@@ -42,6 +42,12 @@ API Reference   | Description
 **Validation**                      | `PropTypes - MyComponent.propTypes = { email: PropTypes.string }`
 **Custom validation**               | `MyCo.propTypes = { customProp: (props, key, componentName) => { return new Error('Validation failed!') } }`
 **Context**                         | Context provides a way to pass data through the component tree without having to pass props down manually at every level
+**Hooks**                           | Hooks
+**useState**                        | Use local state within a function component
+**useEffect**                       | Accepts a function which can perform any side effects. Can have multiple hooks.
+**useEffect clean up**              | Return method from useEffect, to clean the subscription
+**useContext**                      | Saves you the stress of having to rely on a Context consumer
+**useLayoutEffect**                 | The signature is identical to UseEffect, but it fires synchronously after all DOM mutations.
 
 
 
