@@ -48,7 +48,7 @@ API Reference   | Description
 **useEffect clean up**              | Return method from useEffect, to clean the subscription
 **useContext**                      | Saves you the stress of having to rely on a Context consumer
 **useLayoutEffect**                 | The signature is identical to UseEffect, but it fires synchronously after all DOM mutations.
-
-
-
-
+**useReducer**                      | May be used as an alternative to useState
+**useCallback**                     | Returns a memoized callback.
+**useMemo**                         | Returns a memoized value.
+**useRef**                          | Returns a 'ref' object.
